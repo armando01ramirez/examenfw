@@ -3,12 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { EncabezadoComponent } from './componente/encabezado/encabezado.component';
+import { CuerpoComponent } from './componente/cuerpo/cuerpo.component';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    
+    EncabezadoComponent,
+    CuerpoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
